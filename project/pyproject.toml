@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "project"
+version = "0.1.0"
+description = "fastapi-tdd-docker course"
+authors = ["Lyubomir Angelov <lubomir.angelov.an@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[[tool.poetry.source]]
+name = "proxy"
+url = "se1-mwg-p03.schwarz""
+default = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
