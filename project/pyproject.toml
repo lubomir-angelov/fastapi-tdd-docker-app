@@ -11,9 +11,14 @@ python = "^3.10"
 
 [[tool.poetry.source]]
 name = "proxy"
-url = "se1-mwg-p03.schwarz""
+url = "se1-mwg-p03.schwarz"
 default = true
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.aerich]
+tortoise_orm = "app.db.TORTOISE_ORM"
+location = "./migrations"
+src_folder = "./."
